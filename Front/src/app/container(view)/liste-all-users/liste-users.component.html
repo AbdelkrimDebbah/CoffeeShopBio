@@ -1,0 +1,70 @@
+<div class="background">
+	<div class="d-flex flex-wrap justify-content-center m-4" >
+
+		<div *ngFor="let user of users">
+			<div class="card m-3" style="width: 18rem;">
+
+
+
+
+				<div class="card-body">
+					<h5 class="card-name">{{user.username}}</h5>
+				</div>
+
+				<div class="card-footer">
+
+					<div [style.color]="'black'">
+
+
+
+
+
+							<label for="username" class="">Name</label>
+							<input [(ngModel)]="user.username" name="username" type="text" class="form-control"
+								id="username" aria-describedby="usernameHelp">
+
+
+
+							<label for="email" class="mt-2">Email</label>
+							<input [(ngModel)]="user.email" type="text" name="email" class="form-control" id="email">
+
+
+							<label for="adresse" class="mt-2">Adresse</label>
+							<input [(ngModel)]="user.adresse" type="text" name="email" class="form-control"
+								id="adresse">
+
+
+							<div class="m-3 d-flex justify-content-center">
+								<button class="btn btn-dark m-1" (click)="profile.update(user)">UPDATE</button>
+								<button class="btn btn-dark m-1" (click)="delete(user.id)">DELETE</button>
+							</div>
+
+							<p *ngIf="errorProfile">Veuillez remplir tous les champs</p>
+
+
+							<p *ngIf="userDeleted">
+								L'utilisateur a été supprimé.</p>
+
+
+
+							<p *ngIf=" userModified">
+								L'utilisateur a été modifié avec succés.</p>
+
+					</div>
+
+
+				</div>
+
+
+
+
+				<!-- <a [routerLink]="['/updateuser', .id]" class="btn btn-dark m-2 w-auto">MODIFIER</a>
+			<a [routerLink]="['/deleteuser', this.id]" class="btn btn-dark m-2 w-auto">SUPPRIMER</a> -->
+
+
+				<!-- <p class="description">Lorem</p> -->
+
+			</div>
+		</div>
+	</div>
+</div>

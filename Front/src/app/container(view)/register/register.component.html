@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="register.component.css">
+<div [style.color]="'brown'">
+
+	<div class="container_register">
+
+		<div class="words">
+			L'équipe COFFEE SHOP BIO est heureuse de vous compter parmis ses futurs clients
+		</div>div>
+
+		<div class="word">
+			<div class="encadrer p-2">
+
+				<label class="username" class="form-label">Username</label>
+				<input [(ngModel)]="username" name="username" type="text" class="form-control"
+					id="exampleInputusername1" aria-describedby="usernameHelp">
+
+
+
+				<label class="Password" class="form-label">Password</label>
+				<input [(ngModel)]="password" type="password" name="password" class="form-control"
+					id="exampleInputPassword1">
+
+
+
+				<label class="Email" class="form-label">Email</label>
+				<input [(ngModel)]="email" type="text" name="email" class="form-control" 
+					id="exampleInputEmail1">
+
+
+
+				<label class="Adresse" class="form-label">Adresse</label>
+				<input [(ngModel)]="adresse" type="text" name="email" class="form-control" id="exampleInputAdresse1">
+
+
+				<button type="button" class="button" (click)="register()">REGISTER</button>
+			</div>
+
+
+		</div>
+	</div>
+</div>

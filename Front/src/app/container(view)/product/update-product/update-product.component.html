@@ -1,0 +1,18 @@
+
+<div class="container_ModifieProduct">
+    <div class="words">
+      Modifier votre produit a vendre
+    </div>
+    <div class="w-25">
+      <div class="encadrer">
+        <label class="word">Name</label>
+        <input [(ngModel)]="item.name" name="name" type="text" class="form-control" id="exampleInputname1">
+        <label class="word">Price</label>
+        <input [(ngModel)]="item.price" type="price" name="number" class="form-control" id="exampleInputprice1">
+        <label class="word">Link</label>
+        <input [(ngModel)]="item.link" type="text" name="link" class="form-control" id="exampleInputlink1">
+        <button type="word" class="button" (click)="update(item)">VALIDER</button>
+      </div>
+    </div>
+  </div>
+ 

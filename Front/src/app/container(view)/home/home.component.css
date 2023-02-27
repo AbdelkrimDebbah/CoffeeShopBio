@@ -1,0 +1,47 @@
+.container_home{
+    background: url('https://img.freepik.com/photos-gratuite/grains-cafe-torrefies-frais-tasse-espresso-chaud-mousse-situe-gauche-large-surface-blanche-beton_166373-598.jpg?w=2000');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .btn1{
+    position: absolute;
+    right: 150px;
+    top:20px;
+    
+} */
+
+.btn1, .btn2{
+    background-color: black;
+    color: white;
+    /* padding: 10px; */
+    padding: 7px 17px;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: right;
+    margin: 5px
+    
+}
+
+
+
+/* .btn2{
+    position: absolute;
+    right: 120px;
+    top:20px;
+
+} */
+
+#Bienvenue{
+    
+    color: black;
+    font-size: 53px;
+    text-align:  right;
+    margin-right: 100px;
+
+    padding-top: 350px;
+    font-family: cursive;
+
+
+}

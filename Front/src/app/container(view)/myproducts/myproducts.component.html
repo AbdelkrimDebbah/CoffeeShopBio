@@ -1,0 +1,24 @@
+<div class="d-flex flex-wrap justify-content-center m-2">
+    <div *ngFor="let item of myproducts">
+        <div class="card m-3"  style="width: 18rem;">
+
+            <img src={{item.link}} class="card-img-top" width="200" height="250">
+
+
+
+            <div class="card-body">
+                <h5 class="card-name">{{item.name}}</h5>
+            </div>
+
+            <div class="card-footer">
+                <p> € {{item.price}}</p>
+
+                <a [routerLink]="['/updateproduct', item.id]" class="btn btn-dark m-2 w-auto">MODIFIER</a>
+                <app-delete-product [item]="item"></app-delete-product>
+
+            </div>
+
+            <!-- <p class="description">Lorem</p> -->
+
+        </div>
+    </div>

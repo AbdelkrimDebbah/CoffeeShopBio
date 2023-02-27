@@ -1,0 +1,120 @@
+<div class="row row-cols-1 row-cols-md-4 g-4">
+	<div *ngFor="let item of products">
+	<div class="card" style="width: 18rem;" >
+		
+		<img src={{item.link}} class="card-img-top" width="200" height="250">
+		
+		 
+
+			<div class="card-body">
+				<h5 class="card-name">{{item.name}}</h5>
+			</div>
+			
+			<div class="card-footer">
+			<p> € {{item.price}}</p>
+				<button class="bouton m-2 w-auto">ajouter au panier</button>
+			</div>
+
+			<a *ngIf="isAdmin" [routerLink]="['/updateproduct', item.id]" class="btn btn-dark m-2 w-auto">MODIFIER</a>
+			<a *ngIf="isAdmin" [routerLink]="['/deleteproduct', item.id]" class="btn btn-dark m-2 w-auto">SUPPRIMER</a>
+
+			
+			<!-- <p class="description">Lorem</p> -->
+
+		</div>
+</div>
+
+		<!-- <div class="column">
+			<h3 class="titre">Produit 2</h3>
+			<img src="../../../assets/mock/2.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem</p>
+			<button class="bouton">ajouter au panier</button>
+		</div>
+		
+		<div class="column">
+			<h3 class="titre">Produit 3</h3>
+			<img src="../../../assets/mock/3.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem</p>
+			<button class="bouton">ajouter au panier</button>
+		</div>
+		
+		<div class="column ">
+			<h3 class="titre">Produit 4</h3>
+			<img src="../../../assets/mock/4.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quae
+				recusandae deserunt exercitationem sint!</p>
+			<button class="bouton">ajouter au panier</button>
+		</div>
+	
+	
+		<div class="column ">
+			<h3 class="titre">Produit 5</h3>
+			<img src="../../../assets/mock/5.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quae
+				recusandae deserunt exercitationem sint!</p>
+			<button class="bouton">ajouter au panier</button>
+		</div>
+		
+		<div class="column">
+			<h3 class="titre">Produit 6</h3>
+			<img src="../../../assets/mock/6.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quae
+				recusandae deserunt exercitationem sint!</p>
+			<button class="bouton">ajouter au panier</button>
+		</div>
+		
+		<div class="column">
+			<h3 class="titre">Produit 7</h3>
+			<img src="../../../assets/mock/7.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quae
+				recusandae deserunt exercitationem sint!</p>
+			<button class="bouton">ajouter au panier</button>
+		</div>
+		
+		<div class="column">
+			<h3 class="titre">Produit 8</h3>
+			<img src="../../../assets/mock/8.jpg" class="img-fluid">
+			<span>€19.99</span>
+			<p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quae
+				recusandae deserunt exercitationem sint!</p>
+			<button class="bouton">ajouter au panier</button>
+		</div> -->
+	
+
+
+<!-- <div class="card" style="width: 16.5rem;">
+	
+	<img src="/assets/mock/bio.jpg" class="card" >
+	<div class="card-footer">
+		18€/kg
+		<button type="button" class="button-buy">BUY</button>
+
+	</div>
+</div> -->
+
+
+
+<!-- <div class="row row-cols-1 row-cols-md-4 g-4">
+	<div *ngFor="let product of products">
+		<div class="col">
+			<app-product [item]="product"></app-product>
+		</div>
+	</div>
+</div>
+
+ <div class="container mt-5">
+	<div class="row">
+	  <div class="col-md-4" ng-repeat="product in products">
+		<img ng-src="/assets/mock/" class="img-fluid">
+		<h3>{{ product.name }}</h3>
+		<p>{{ product.description }}</p>
+		<button ng-click="buyProduct(product)" class="btn btn-primary">Acheter</button>
+	  </div>
+	</div>
+  </div> -->

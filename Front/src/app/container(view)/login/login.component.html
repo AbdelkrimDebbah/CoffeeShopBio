@@ -1,0 +1,55 @@
+<div [style.color]="'brown'">
+	<div class="container_login">
+
+
+		<div class="words"> 
+			L'équipe COFFEE SHOP BIO est heureuse de vous revoir !
+		</div>
+		
+		<div class="word" >
+			<div class="encadrer p-2">
+				<label class="username" class="form-label">Username</label>
+
+				<input [(ngModel)]="username" name="username" type="text" class="form-control"
+					id="exampleInputusername1" >
+
+				<label class="password" class="form-label">Password</label>
+
+				<input [(ngModel)]="password" type="password" name="password" class="form-control"
+					id="exampleInputPassword1">
+
+
+				<button type="button" class="button" (click)="login()">Se connecter</button>
+
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+	<!-- <div class="container_login">
+
+	<p id="Bienvenue">L'équipe COFFEE SHOP est heureuse de vous revoir ! </p>
+
+	<div class="mb-3">
+		<label for="exampleInputusername1" class="form-label">Username</label>
+		<div>{{email}}</div> -->
+	<!-- <input [(ngModel)]="username" name="username" type="text" class="form-control" id="exampleInputusername1"
+			aria-describedby="usernameHelp">
+
+	</div>
+
+	<div class="mb-3">
+		<label for="exampleInputPassword1" class="form-label">Password</label>
+
+		<input [(ngModel)]="password" type="password" name="password" class="form-control" id="exampleInputPassword1">
+
+	</div>
+
+
+	<button type="button" class="btn btn-primary" (click)="login()">Login</button>
+
+</div> -->

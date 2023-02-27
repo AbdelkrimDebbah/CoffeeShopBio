@@ -1,0 +1,52 @@
+<div [style.color]="'brown'">
+
+	<div class="container_profile">
+
+		<div class="words">
+			Veuillez remplir tout les champs avant de valider votre ou vos modification(s)
+		</div>
+
+
+
+		<div class="word">
+			<div class="encadrer">
+
+				<label class="username" class="">Name</label>
+				<input [(ngModel)]="user.username" name="username" type="text" class="form-control"
+					id="exampleInputusername1" aria-describedby="usernameHelp">
+
+
+
+				<label class="Email">Email</label>
+				<input [(ngModel)]="user.email" type="text" name="email" class="form-control" id="exampleInputEmail1">
+
+
+
+				<label class="Adresse">Adresse</label>
+				<input [(ngModel)]="user.adresse" type="text" name="email" class="form-control"
+					id="exampleInputAdresse1">
+
+
+				<div class="button">
+					<button class="button2" class="button2" (click)="update(user)">UPDATE</button>
+					<button class="button1" class="button1" (click)="delete()">DELETE</button>
+				</div>
+
+				<p *ngIf="errorProfile">Veuillez remplir tous les champs</p>
+
+
+				<p *ngIf="userDeleted">
+					L'utilisateur a été supprimé.</p>
+
+
+
+			</div>
+			<p *ngIf="userModified" style="margin-left: 180px;">
+
+				L'utilisateur a été modifié avec succés.</p>
+
+
+
+		</div>
+	</div>
+</div>
