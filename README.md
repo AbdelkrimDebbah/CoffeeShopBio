@@ -29,7 +29,8 @@ An administrator has all the rights (create, modify, and delete). They can even 
 
 To start you need to create an .env file from the .env.example file. 
 
-By running `docker compose up`, the API and the database will be executed automatically, you just have to launch the front-end with the `npm start` command.    
+By running `docker compose up`, the API and the database will be executed automatically.  
+Lauch `npm install`, you just have to launch the front-end with the `npm start` command in /Front.    
 You create a user profile, and you can add products for sale.
 
 
