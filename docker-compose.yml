@@ -14,9 +14,7 @@ services:
         restart: unless-stopped
         volumes:
             - mydb:/var/lib/mysql
-        environment:
-            - MYSQL_DATABASE
-            - MYSQL_ROOT_PASSWORD
+        env_file: .env
         ports:
             - '3306:3306'            
 
